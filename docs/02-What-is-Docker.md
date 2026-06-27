@@ -167,7 +167,11 @@ Host Operating System
 Hardware
 ```
 
-Because containers share the host kernel, they start in seconds and use far fewer system resources.
+Because containers share the host operating system's kernel, they do not need to start a new operating system every time a container is created.
+
+Instead, containers use the host computer's CPU, memory (RAM), storage, and network through the Linux kernel.
+
+This is why containers start in a few seconds, use less memory, and are much lighter than virtual machines.
 
 ---
 
