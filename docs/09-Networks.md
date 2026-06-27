@@ -368,7 +368,34 @@ Docker shows:
 This is one of the most useful debugging commands.
 
 ---
+---
 
+                     Browser
+                        │
+                        ▼
+                 https://mowaidat.42.fr
+                        │
+                        ▼
+                  NGINX Container
+                        │
+          fastcgi_pass wordpress:9000
+                        │
+                Docker DNS Lookup
+                        │
+        "wordpress" → 172.xx.xx.xx
+                        │
+                        ▼
+              WordPress Container
+                        │
+         mariadb:3306
+                        │
+                Docker DNS Lookup
+                        │
+          "mariadb" → 172.xx.xx.xx
+                        │
+                        ▼
+               MariaDB Container
+---
 # Key Points
 
 Docker Networks:
